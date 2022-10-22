@@ -5,7 +5,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 function BasicExample() {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="./assets/personaldProducts/imageTest.jpg" />
       <Card.Body>
         <Card.Title>Card Title here</Card.Title>
         <Card.Text>Card Description here</Card.Text>
