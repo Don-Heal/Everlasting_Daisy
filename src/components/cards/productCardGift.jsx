@@ -1,9 +1,11 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../assets/personalProducts/glasses/glasses.jpg";
-import image2 from "../assets/personalProducts/glasses/christmas-glasses.jpg";
+import image1 from "../assets/personalProducts/gift/mugbox.jpg";
+import image2 from "../assets/personalProducts/gift/mugwinebox.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
+
+const Title = [{ title: "Mug Box" }, { title: "Mug Wine Box" }];
 
 export default function BasicExample() {
   return (
@@ -13,11 +15,7 @@ export default function BasicExample() {
           <div key={index}>
             <Card.Img variant="top" src={card.imageSrc} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>{Title[index].title}</Card.Title>
             </Card.Body>
           </div>
         ))}

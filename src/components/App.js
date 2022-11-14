@@ -1,12 +1,12 @@
 import "../App.css";
 import Navigation from "./Navigation";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../components/home";
-import About from "../components/about";
-import Products from "../components/products";
-import Baby from "../components/babyProducts";
-import Orders from "../components/orders";
-import Contact from "../components/contact";
+import Home from "./home";
+import About from "./about";
+import Products from "./personalProducts";
+import Baby from "./babyProducts";
+import Orders from "./orders";
+import Contact from "./contact";
 
 function App() {
   return (

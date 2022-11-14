@@ -22,6 +22,18 @@ const Images = [
   { imageSrc: image9 },
 ];
 
+const Title = [
+  { title: "Red" },
+  { title: "Blue" },
+  { title: "Green" },
+  { title: "Grey" },
+  { title: "Navy" },
+  { title: "Pink" },
+  { title: "Purple" },
+  { title: "White" },
+  { title: "Orange" },
+];
+
 export default function BasicExample() {
   return (
     <div className="card-wrapper">
@@ -30,11 +42,7 @@ export default function BasicExample() {
           <div key={index}>
             <Card.Img variant="top" src={card.imageSrc} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
+              <Card.Title>{Title[index].title}</Card.Title>
             </Card.Body>
           </div>
         ))}
