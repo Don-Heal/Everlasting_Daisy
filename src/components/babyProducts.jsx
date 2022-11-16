@@ -1,10 +1,6 @@
-import React from "react";
+import Cards from "../components/cards/babyProductsPage";
 
-const babyProducts = () => {
-  return (
-    <>
-      <p>Baby Products</p>
-    </>
-  );
+const products = () => {
+  return <Cards class="productsPage" />;
 };
-export default babyProducts;
+export default products;
