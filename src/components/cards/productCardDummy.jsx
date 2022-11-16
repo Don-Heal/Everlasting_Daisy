@@ -1,19 +1,22 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../../assets/personalProducts/glasses/glasses.jpg";
-import image2 from "../../assets/personalProducts/glasses/christmas-glasses.jpg";
-import image3 from "../../assets/personalProducts/glasses/flute.jpg";
+import image1 from "../../assets/babyProducts/dummyChain/big.jpg";
+import image2 from "../../assets/babyProducts/dummyChain/bigShot.jpg";
+import image3 from "../../assets/babyProducts/dummyChain/small.jpg";
+import image4 from "../../assets/babyProducts/dummyChain/smallShot.jpg";
 
 const Images = [
   { imageSrc: image1 },
   { imageSrc: image2 },
   { imageSrc: image3 },
+  { imageSrc: image4 },
 ];
 
 const Title = [
-  { title: "Glasses" },
-  { title: "Christmas Glasses" },
-  { title: "Flute" },
+  { title: "Dummy Chain - Large" },
+  { title: "Big" },
+  { title: "Dummy Chain - Small" },
+  { title: "Small" },
 ];
 
 export default function BasicExample() {

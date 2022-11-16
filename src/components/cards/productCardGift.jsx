@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../assets/personalProducts/gift/mugbox.jpg";
-import image2 from "../assets/personalProducts/gift/mugwinebox.jpg";
+import image1 from "../../assets/personalProducts/gift/mugbox.jpg";
+import image2 from "../../assets/personalProducts/gift/mugwinebox.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 

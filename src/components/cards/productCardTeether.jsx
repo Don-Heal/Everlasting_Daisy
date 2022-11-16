@@ -1,20 +1,10 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../../assets/personalProducts/glasses/glasses.jpg";
-import image2 from "../../assets/personalProducts/glasses/christmas-glasses.jpg";
-import image3 from "../../assets/personalProducts/glasses/flute.jpg";
+import image1 from "../../assets/babyProducts/teethers/collection.jpg";
 
-const Images = [
-  { imageSrc: image1 },
-  { imageSrc: image2 },
-  { imageSrc: image3 },
-];
+const Images = [{ imageSrc: image1 }];
 
-const Title = [
-  { title: "Glasses" },
-  { title: "Christmas Glasses" },
-  { title: "Flute" },
-];
+const Title = [{ title: "Our Teethers" }];
 
 export default function BasicExample() {
   return (

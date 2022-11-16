@@ -1,14 +1,14 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../assets/personalProducts/mugs/mug-red.jpg";
-import image2 from "../assets/personalProducts/mugs/mug-blue.jpg";
-import image3 from "../assets/personalProducts/mugs/mug-green.jpg";
-import image4 from "../assets/personalProducts/mugs/mug-grey.jpg";
-import image5 from "../assets/personalProducts/mugs/mug-navy.jpg";
-import image6 from "../assets/personalProducts/mugs/mug-pink.jpg";
-import image7 from "../assets/personalProducts/mugs/mug-purple.jpg";
-import image8 from "../assets/personalProducts/mugs/mug-white.jpg";
-import image9 from "../assets/personalProducts/mugs/mug-orange.jpg";
+import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
+import image2 from "../../assets/personalProducts/mugs/mug-blue.jpg";
+import image3 from "../../assets/personalProducts/mugs/mug-green.jpg";
+import image4 from "../../assets/personalProducts/mugs/mug-grey.jpg";
+import image5 from "../../assets/personalProducts/mugs/mug-navy.jpg";
+import image6 from "../../assets/personalProducts/mugs/mug-pink.jpg";
+import image7 from "../../assets/personalProducts/mugs/mug-purple.jpg";
+import image8 from "../../assets/personalProducts/mugs/mug-white.jpg";
+import image9 from "../../assets/personalProducts/mugs/mug-orange.jpg";
 
 const Images = [
   { imageSrc: image1 },

@@ -18,6 +18,13 @@ const Title = [
   { title: "Gifts" },
 ];
 
+const Link = [
+  { link: "./products/mugs" },
+  { link: "./products/glasses" },
+  { link: "./products/bottles" },
+  { link: "./products/giftBox" },
+];
+
 export default function BasicExample() {
   return (
     <div className="card-wrapper">
@@ -25,11 +32,15 @@ export default function BasicExample() {
         {Images.map((card, index) => (
           <div key={index}>
             <div class="cardImages">
-              <Card.Img variant="top" src={card.imageSrc} />
+              <a href={Link[index].link}>
+                <Card.Img variant="top" src={card.imageSrc} />
+              </a>
             </div>
             <Card.Body>
               <div class="cardTitle">
-                <Card.Title>{Title[index].title}</Card.Title>
+                <button type="button">
+                  <a href={Link[index].link}>{Title[index].title}</a>
+                </button>
               </div>
             </Card.Body>
           </div>
