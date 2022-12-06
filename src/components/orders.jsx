@@ -14,7 +14,7 @@ function ContactForm() {
     name="name"
     id="full-name"
     placeholder="First and Last"
-    required=""
+    required
   />
           <ValidationError 
         prefix="Full" 
@@ -27,7 +27,7 @@ function ContactForm() {
     name="_replyto"
     id="email-address"
     placeholder="email@domain.com"
-    required=""
+    required
   />
         <ValidationError 
         prefix="Email" 
@@ -38,7 +38,7 @@ function ContactForm() {
     <label htmlFor="product">
       1. Which product would you like to order?
     </label>
-    <select name="product" id="product" required="">
+    <select name="product" id="product" required>
       <option value="" selected="" disabled="">
         Pick a Product
       </option>
@@ -48,7 +48,7 @@ function ContactForm() {
       <option value={"Mugs"}>Mugs</option>
     </select>
     <label htmlFor="font">2. Which font would you like?.</label>
-    <select name="font" id="font" required="">
+    <select name="font" id="font" required>
       <option value="" selected="" disabled="">
         Choose
       </option>
@@ -62,7 +62,7 @@ function ContactForm() {
       <option value={"Once More Christopher"}>Once More Christopher</option>
     </select>
     <label htmlFor="colour">3. Which colour text?.</label>
-    <select name="colour" id="colour" required="">
+    <select name="colour" id="colour" required>
       <option value="" selected="" disabled="">
         Choose
       </option>
@@ -99,7 +99,7 @@ function ContactForm() {
     name="ship"
     id="shipping"
     placeholder="123 Something st, Suburb, Postcode"
-    required=""
+    required
   />
           <ValidationError 
         prefix="Ship" 
