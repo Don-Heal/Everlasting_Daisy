@@ -47,7 +47,22 @@ function ContactForm() {
       <option value={"Glasses"}>Glasses</option>
       <option value={"Mugs"}>Mugs</option>
     </select>
-    <label htmlFor="font">2. Which font would you like?.</label>
+    <label htmlFor="font">1b. If you have selected a Mug please choose which colour otherwise just leave blank</label>
+    <select name="mug" id="mug">
+      <option value="" selected="" disabled="">
+        Choose
+      </option>
+      <option value={"Red"}>Red</option>
+      <option value={"Green"}>Green</option>
+      <option value={"Pink"}>Pink</option>
+      <option value={"Blue"}>Blue</option>
+      <option value={"Purple"}>Purple</option>
+      <option value={"Grey"}>Grey</option>
+      <option value={"Navy Blue"}>Navy Blue</option>
+      <option value={"Orange"}>Orange</option>
+      <option value={"White"}>White</option>
+      </select>
+    <label htmlFor="font">2. Which font would you like?</label>
     <select name="font" id="font" required>
       <option value="" selected="" disabled="">
         Choose
