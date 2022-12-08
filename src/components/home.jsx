@@ -1,16 +1,12 @@
 import React from "react";
-import './styles/home.scss';
+import './styles/main.scss';
 
 const Home = () => {
   return (
-    <>
-      <div className="home">
-        <h1>Everlasting Daisy & Co</h1>
-        </div>
         <div className="home-banner">
           <div className="home-image">
             <div className="info-containers">
-            <div className="welcome-container">
+            <div className="small-container">
               <h2>Welcome</h2>
               <p>
                 Providing personalised gifts for any occasion and baby items all
@@ -18,20 +14,22 @@ const Home = () => {
               </p>
               <div className="buttons">
                 <a href="./products">
-                  <button type="button">Personal Products</button>
-                </a>
-                  <a href="./baby_products">
-                  <button type="button">Baby Products</button>
+                  <button type="button">Shop Now</button>
                 </a>
               </div>
-            
+              <br></br>
+              <br></br>
             </div>
-          <div className="about-us">
+          <div className="large-containers">
             <h2>Getting to Know Us</h2>
             <p> Find out who we are and what we have to offer!</p>
             <div className="buttons">
+              <a href="./about">
               <button>Learn More</button>
+              </a>
             </div>
+            <br></br>
+            <br></br>
           </div>
           <div className="information">
             <div className="location">
@@ -51,7 +49,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 export default Home;

@@ -3,19 +3,22 @@ import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
 import image2 from "../../assets/personalProducts/glasses/glasses.jpg";
 import image3 from "../../assets/personalProducts/bottles/bottles.jpg";
 import image4 from "../../assets/personalProducts/gift/mugwinebox.jpg";
+import image5 from "../../assets/babyProducts/babyBibs/pooh.jpg";
 
 const Images = [
   { imageSrc: image1 },
   { imageSrc: image2 },
   { imageSrc: image3 },
   { imageSrc: image4 },
+  { imageSrc: image5 },
 ];
 
 const Title = [
   { title: "Mugs" },
   { title: "Glasses" },
   { title: "Bottles" },
-  { title: "Gifts" },
+  { title: "Gift Boxes" },
+  { title: "Baby Products" },
 ];
 
 const Link = [
@@ -23,6 +26,7 @@ const Link = [
   { link: "./products/glasses" },
   { link: "./products/bottles" },
   { link: "./products/giftBox" },
+  { link: "./baby_products" },
 ];
 
 export default function BasicExample() {
