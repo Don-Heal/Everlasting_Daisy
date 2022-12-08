@@ -1,4 +1,4 @@
-import Cards from "../components/cards/babyProductsPage";
+import Cards from "../components/cards/productsPage";
 
 const products = () => {
   return <Cards class="productsPage" />;

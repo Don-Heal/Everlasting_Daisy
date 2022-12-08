@@ -13,7 +13,12 @@ const Home = () => {
               handmade
             </p>
             <div>
-              <button>Products</button>
+              <button type="button">
+                <a href="./products">Personalised Products</a>
+              </button>
+              <button type="button">
+                <a href="./baby_products">Baby Products</a>
+              </button>
             </div>
           </div>
           <div className="about-us">
