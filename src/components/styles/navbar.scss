@@ -3,9 +3,9 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-color: #636260;
     width: 100%;
     height: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     @include devices(tablet){
         background-color: transparent;
     }
@@ -26,11 +26,12 @@
 
   //Start of dropdown list styling
 .dropbtn {
-    background-color: #636260;
-    color: white;
+  background-color: transparent;
+    color: rgb(0, 0, 0);
     padding: 16px;
     font-size: 16px;
     border: none;
+    cursor: pointer;
   }
   
   .dropdown {
@@ -58,6 +59,9 @@
 
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #474745;}
+  .dropdown:hover .dropbtn {
+    color : #ddd;
+    background-color: #474745;
+  }
 
   

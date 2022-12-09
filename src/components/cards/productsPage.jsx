@@ -3,22 +3,19 @@ import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
 import image2 from "../../assets/personalProducts/glasses/glasses.jpg";
 import image3 from "../../assets/personalProducts/bottles/bottles.jpg";
 import image4 from "../../assets/personalProducts/gift/mugwinebox.jpg";
-import image5 from "../../assets/babyProducts/babyBibs/pooh.jpg";
 
 const Images = [
   { imageSrc: image1 },
   { imageSrc: image2 },
   { imageSrc: image3 },
   { imageSrc: image4 },
-  { imageSrc: image5 },
 ];
 
 const Title = [
-  { title: "Mugs" },
+  { title: "Coffee Mugs" },
   { title: "Glasses" },
   { title: "Bottles" },
   { title: "Gift Boxes" },
-  { title: "Baby Products" },
 ];
 
 const Link = [
@@ -26,7 +23,6 @@ const Link = [
   { link: "./products/glasses" },
   { link: "./products/bottles" },
   { link: "./products/giftBox" },
-  { link: "./baby_products" },
 ];
 
 export default function BasicExample() {
@@ -35,18 +31,20 @@ export default function BasicExample() {
       <Card style={{ width: "18rem" }}>
         {Images.map((card, index) => (
           <div key={index}>
-            <div class="cardImages">
-              <a href={Link[index].link}>
-                <Card.Img variant="top" src={card.imageSrc} />
-              </a>
-            </div>
-            <Card.Body>
-              <div class="cardTitle">
-                <button type="button">
-                  <a href={Link[index].link}>{Title[index].title}</a>
-                </button>
+            <div className="card">
+              <div class="cardImages">
+                <a href={Link[index].link}>
+                  <Card.Img variant="top" src={card.imageSrc} />
+                </a>
+                <Card.Body>
+                  <div class="buttons">
+                    <a href={Link[index].link}>
+                      <button>{Title[index].title} Shop Now</button>
+                    </a>
+                  </div>
+                </Card.Body>
               </div>
-            </Card.Body>
+            </div>
           </div>
         ))}
       </Card>

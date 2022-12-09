@@ -22,10 +22,16 @@ export default function BasicExample() {
       <Card style={{ width: "18rem" }}>
         {Images.map((card, index) => (
           <div key={index}>
-            <Card.Img variant="top" src={card.imageSrc} />
-            <Card.Body>
-              <Card.Title>{Title[index].title}</Card.Title>
-            </Card.Body>
+            <div className="card">
+              <div class="cardImages">
+                <Card.Img variant="top" src={card.imageSrc} />
+                <Card.Body>
+                  <div class="buttons">
+                    <button>{Title[index].title}</button>
+                  </div>
+                </Card.Body>
+              </div>
+            </div>
           </div>
         ))}
       </Card>
