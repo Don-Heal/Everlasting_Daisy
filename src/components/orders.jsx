@@ -8,6 +8,7 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-container">
+        <h1>Manual Order Form</h1>
         <fieldset id="fs-frm-inputs">
           <label htmlFor="full-name" className="form-field">
             Full Name:
@@ -118,7 +119,7 @@ function ContactForm() {
             </select>
             <br></br>
             <label htmlFor="colour" className="form-field">
-              3. Which colour text?.
+              3. Which colour text?
             </label>
             <select name="colour" className="form-field" required>
               <option value="" selected="" disabled="" className="form-input">
@@ -199,6 +200,22 @@ function ContactForm() {
               <option className="lilac" value={"Lilac"}>
                 Lilac
               </option>
+            </select>
+            <br></br>
+            <label htmlFor="Quantity" className="form-field">
+              3. Quantity (any order greater than 6 you will need to contact us
+              directly)
+            </label>
+            <select name="Quantity" className="form-field" required>
+              <option value="" selected="" disabled="" className="form-input">
+                Choose
+              </option>
+              <option value={"1"}>1</option>
+              <option value={"2"}>2</option>
+              <option value={"3"}>3</option>
+              <option value={"4"}>4</option>
+              <option value={"5"}>5</option>
+              <option value={"6"}>6</option>
             </select>
           </fieldset>
           <label htmlFor="ship" className="form-field">
