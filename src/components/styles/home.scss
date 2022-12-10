@@ -98,19 +98,17 @@
   min-width: 350px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-  &.location {
-    h2 {
-      font-size: 6em;
-      font-weight: 300;
-      color: #636260;
-      text-align: center;
-    }
-    p {
-      font-size: 3em;
-      font-weight: 300;
-      max-width: 80%;
-      color: #25282c;
-      text-align: center;
-    }
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+    color: #636260;
+    text-align: center;
+  }
+  p {
+    font-size: 1.5em;
+    font-weight: 300;
+    max-width: 80%;
+    color: #25282c;
+    text-align: center;
   }
 }
