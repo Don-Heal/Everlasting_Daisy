@@ -1,67 +1,85 @@
 .nav {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    @include devices(tablet){
-        background-color: transparent;
-    }
-
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  @include devices(tablet) {
+    background-color: transparent;
+  }
 }
 
-.nav-bar
- {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    @include devices(tablet){
-        display: none;
-    }
+.nav-bar {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  @include devices(tablet) {
+    display: none;
+  }
 }
 
-
-  //Start of dropdown list styling
+//Start of dropdown list styling
 .dropbtn {
   background-color: transparent;
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  @include devices(lrg) {
+    font-size: 1.5rem;
   }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
+  @include devices(med) {
+    font-size: 1.2rem;
   }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  @include devices(sml) {
+    font-size: 1rem;
   }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
+}
 
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {
-    color : #ddd;
-    background-color: #474745;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+  @include devices(lrg) {
+    font-size: 1.5rem;
+  }
+  @include devices(med) {
+    font-size: 1.2rem;
+  }
+  @include devices(sml) {
+    font-size: 1rem;
+  }
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #ddd;
+  background-color: #474745;
+}
