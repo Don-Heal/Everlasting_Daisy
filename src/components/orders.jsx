@@ -1,9 +1,16 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { Link } from "react-router-dom";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xknedrza");
   if (state.succeeded) {
-    return <p>Your Order was Submitted Successfully</p>;
+    return (
+      <>
+        {" "}
+        <p>Your Order was Submitted Successfully</p>
+        <Link to="/">Return Home</Link>
+      </>
+    );
   }
   return (
     <form onSubmit={handleSubmit}>
