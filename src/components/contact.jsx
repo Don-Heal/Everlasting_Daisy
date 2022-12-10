@@ -7,14 +7,32 @@ function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <textarea id="message" name="message" />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
+      <div className="form-container">
+        <label className="form-field" htmlFor="email">
+          Email Address
+        </label>
+        <input
+          className="form-input"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email@domain.com"
+          required
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <label className="form-field" htmlFor="message">
+          Message
+        </label>
+        <textarea className="form-input" id="message" name="message" required />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </div>
     </form>
   );
 }
