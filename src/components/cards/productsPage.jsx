@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
 import image2 from "../../assets/personalProducts/glasses/glasses.jpg";
 import image3 from "../../assets/personalProducts/bottles/bottles.jpg";
@@ -18,11 +19,11 @@ const Title = [
   { title: "Gift Boxes" },
 ];
 
-const Link = [
-  { link: "./products/mugs" },
-  { link: "./products/glasses" },
-  { link: "./products/bottles" },
-  { link: "./products/giftBox" },
+const link = [
+  { link: "./mugs" },
+  { link: "./glasses" },
+  { link: "./bottles" },
+  { link: "./giftBox" },
 ];
 
 export default function BasicExample() {
@@ -33,14 +34,16 @@ export default function BasicExample() {
           <div key={index}>
             <div className="card">
               <div class="cardImages">
-                <a href={Link[index].link}>
+                <Link to={link[index].link}>
                   <Card.Img variant="top" src={card.imageSrc} />
-                </a>
+                </Link>
                 <Card.Body>
                   <div class="buttons">
-                    <a href={Link[index].link}>
-                      <button>{Title[index].title} Shop Now</button>
-                    </a>
+                    <Link to={link[index].link}>
+                      <button type="button">
+                        {Title[index].title} Shop Now
+                      </button>
+                    </Link>
                   </div>
                 </Card.Body>
               </div>
