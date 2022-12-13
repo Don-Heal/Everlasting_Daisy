@@ -8,7 +8,6 @@ const Navigation = () => {
       <div className="home">
         <div className="home-title">
           <img src={logo} alt="Everlasting Logo" />
-          <h1>Everlasting Daisy & Co</h1>
         </div>
       </div>
       <nav class="nav">
@@ -41,7 +40,8 @@ const Navigation = () => {
             <div class="dropdown-content">
               <Link to="/baby_products/babyBibs">Bibs</Link>
               <Link to="/baby_products/teether">Teethers</Link>
-              <Link to="/baby_products/dummyChains">Teething Rings</Link>
+              <Link to="/baby_products/dummyChains">Dummy Chains</Link>
+              <Link to="/baby_products/apparel">Apparel</Link>
             </div>
           </div>
           <div class="dropdown">

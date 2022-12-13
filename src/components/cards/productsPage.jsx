@@ -2,8 +2,8 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
 import image2 from "../../assets/personalProducts/glasses/glasses.jpg";
-import image3 from "../../assets/personalProducts/bottles/bottles.jpg";
-import image4 from "../../assets/personalProducts/gift/mugwinebox.jpg";
+import image3 from "../../assets/personalProducts/bottles/glass-bottle.jpg";
+import image4 from "../../assets/personalProducts/gift/glass-mug-gift-box.jpg";
 
 const Images = [
   { imageSrc: image1 },

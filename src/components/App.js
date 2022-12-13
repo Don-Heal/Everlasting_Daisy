@@ -14,6 +14,7 @@ import Gift from "./products/giftBox";
 import Bibs from "./baby_products/babyBibs";
 import Teether from "./baby_products/babyTeether";
 import Dummy from "./baby_products/dummyChains";
+import Apparel from "./baby_products/apparel";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="baby_products/babyBibs" element={<Bibs />} />
           <Route path="baby_products/teether" element={<Teether />} />
           <Route path="baby_products/dummyChains" element={<Dummy />} />
+          <Route path="baby_products/apparel" element={<Apparel />} />
         </Routes>
       </Router>
     </div>

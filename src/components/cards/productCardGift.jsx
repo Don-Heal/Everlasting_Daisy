@@ -1,11 +1,11 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../../assets/personalProducts/gift/mugbox.jpg";
-import image2 from "../../assets/personalProducts/gift/mugwinebox.jpg";
+import image1 from "../../assets/personalProducts/gift/glass-mug-gift-box.jpg";
+import image2 from "../../assets/personalProducts/gift/baby-gift-box.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 
-const Title = [{ title: "Mug Box" }, { title: "Mug Wine Box" }];
+const Title = [{ title: "Mug & Glass Gift Box" }, { title: "Baby Gift Box" }];
 
 export default function BasicExample() {
   return (

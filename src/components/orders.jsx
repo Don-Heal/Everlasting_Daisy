@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
+import fonts from "../assets/images/Fonts.jpg";
 function ContactForm() {
   const [state, handleSubmit] = useForm("xknedrza");
   if (state.succeeded) {
@@ -93,35 +94,35 @@ function ContactForm() {
             </select>
             <br></br>
             <label htmlFor="font" className="form-field">
-              2. Which font would you like?
+              2. Which font would you like? (Font Guild Below)
             </label>
             <select name="font" id="font" required className="form-field">
               <option value="" selected="" disabled="" className="form-input">
                 Choose
               </option>
-              <option className="almond" value={"Almond Butter Alexandria"}>
-                Almond Butter Alexandria
+              <option className="almond" value={"Almond Butter"}>
+                Almond Butter
               </option>
-              <option className="baguet" value={"Baguet Script Bethany"}>
-                Baguet Script Bethany
+              <option className="baguet" value={"Baguet Script"}>
+                Baguet Script
               </option>
-              <option className="baguette" value={"BFC Baguette Gabrielle"}>
-                BFC Baguette Gabrielle
+              <option className="baguette" value={"BFC Baguette"}>
+                BFC Baguette
               </option>
-              <option className="tasty" value={"BFC Tasty Trick Dominque"}>
-                BFC Tasty Trick Dominque
+              <option className="tasty" value={"BFC Tasty Trick"}>
+                BFC Tasty Trick
               </option>
-              <option className="boho" value={"Boho Chick Susanne"}>
-                Boho Chick Susanne
+              <option className="boho" value={"Boho Chick"}>
+                Boho Chick
               </option>
-              <option className="october" value={"DTC October Stephanie"}>
-                DTC October Stephanie
+              <option className="october" value={"DTC October"}>
+                DTC October
               </option>
-              <option className="farm" value={"Farm to Table Genevieve"}>
-                Farm to Table Genevieve
+              <option className="farm" value={"Farm to Table"}>
+                Farm to Table
               </option>
-              <option className="once" value={"Once More Christopher"}>
-                Once More Christopher
+              <option className="once" value={"Once More"}>
+                Once More
               </option>
             </select>
             <br></br>
@@ -249,9 +250,8 @@ function ContactForm() {
             rows={5}
             name="message"
             id="message"
-            placeholder="Anything infomation you would like to add about the Order?."
-            required=""
-            defaultValue={""}
+            placeholder="Please include the name you would like on your product?."
+            required
           />
           <ValidationError
             prefix="Message"
@@ -271,11 +271,16 @@ function ContactForm() {
             Submit
           </button>
         </div>
+        <div className="fonts-img">
+          <img src={fonts} alt="Everlasting fonts" />
+        </div>
       </div>
+      ;
     </form>
   );
 }
 function App() {
   return <ContactForm />;
 }
+
 export default App;
