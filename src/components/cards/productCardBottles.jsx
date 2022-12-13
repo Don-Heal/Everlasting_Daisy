@@ -1,11 +1,11 @@
 import Card from "react-bootstrap/Card";
 
-import image1 from "../../assets/personalProducts/bottles/bottles.jpg";
-import image2 from "../../assets/personalProducts/bottles/glass-bottle.jpg";
+import image1 from "../../assets/personalProducts/bottles/glass-bottle.jpg";
+import image2 from "../../assets/personalProducts/bottles/BYO.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 
-const Title = [{ title: "Bottles" }, { title: "Glass Bottles" }];
+const Title = [{ title: "Bottles" }, { title: "BYO Drink Bottle" }];
 
 export default function BasicExample() {
   return (

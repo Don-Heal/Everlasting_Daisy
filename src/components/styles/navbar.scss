@@ -11,6 +11,16 @@
   }
 }
 
+.home-title {
+  img {
+    width: 10%;
+    height: auto;
+    @include devices(med) {
+      width: auto;
+    }
+  }
+}
+
 .nav-bar {
   display: flex;
   margin: auto;
