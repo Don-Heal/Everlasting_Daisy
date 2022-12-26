@@ -45,9 +45,13 @@ const Navigation = () => {
             </div>
           </div>
           <div class="dropdown">
-            <Link to="/orders">
+            <Link to="/personalisedOrders">
               <button class="dropbtn">Order Now</button>
             </Link>
+            <div class="dropdown-content">
+              <Link to="/personalisedOrders">Personalised Orders</Link>
+              <Link to="/babyOrders">Baby Orders</Link>
+            </div>
           </div>
           <div class="dropdown">
             <Link to="/contact">

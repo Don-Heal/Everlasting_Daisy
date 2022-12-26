@@ -5,7 +5,8 @@ import Home from "./home";
 import About from "./about";
 import Products from "./personalProducts";
 import Baby from "./babyProducts";
-import Orders from "./orders";
+import Orders from "./personalisedOrders";
+import BabyOrders from "./babyOrders";
 import Contact from "./contact";
 import Bottles from "./products/bottles";
 import Mugs from "./products/mugs";
@@ -26,7 +27,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
           <Route path="baby_products" element={<Baby />} />
-          <Route path="orders" element={<Orders />} />
+          <Route path="personalisedOrders" element={<Orders />} />
+          <Route path="babyOrders" element={<BabyOrders />} />
           <Route path="contact" element={<Contact />} />
           <Route path="products/bottles" element={<Bottles />} />
           <Route path="products/mugs" element={<Mugs />} />

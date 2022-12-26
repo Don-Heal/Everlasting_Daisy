@@ -36,8 +36,8 @@ const Home = () => {
             <div className="location">
               <h2>Locations</h2>
               <p>
-                Northern Beaches <br></br> Central Coasts <br></br> New South
-                Whales
+                Northern Beaches <br></br> Central Coast <br></br> New South
+                Wales
               </p>
             </div>
             <div className="social">

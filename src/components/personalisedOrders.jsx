@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Link } from "react-router-dom";
 import fonts from "../assets/images/Fonts.jpg";
-function ContactForm() {
+function OrderForm() {
   const [state, handleSubmit] = useForm("xknedrza");
   if (state.succeeded) {
     return (
@@ -13,10 +13,11 @@ function ContactForm() {
       </>
     );
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-container">
-        <h1>Manual Order Form</h1>
+        <h1>Personal Product Order Form</h1>
         <fieldset id="fs-frm-inputs">
           <label htmlFor="full-name" className="form-field">
             Full Name:
@@ -53,7 +54,6 @@ function ContactForm() {
               <option value={"Bottles"}>Bottles</option>
               <option value={"Gift Box"}>Gift Box</option>
               <option value={"Glasses"}>Glasses</option>
-              <option value={"Mugs"}>Mugs</option>
             </select>
             <br></br>
             <label htmlFor="font" className="form-field">
@@ -94,7 +94,7 @@ function ContactForm() {
             </select>
             <br></br>
             <label htmlFor="font" className="form-field">
-              2. Which font would you like? (Font Guild Below)
+              2. Which font would you like? (Font Guide Below)
             </label>
             <select name="font" id="font" required className="form-field">
               <option value="" selected="" disabled="" className="form-input">
@@ -250,7 +250,7 @@ function ContactForm() {
             rows={5}
             name="message"
             id="message"
-            placeholder="Please include the name you would like on your product?."
+            placeholder="Name to go on personalised product"
             required
           />
           <ValidationError
@@ -280,7 +280,7 @@ function ContactForm() {
   );
 }
 function App() {
-  return <ContactForm />;
+  return <OrderForm />;
 }
 
 export default App;
