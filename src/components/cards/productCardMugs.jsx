@@ -1,4 +1,5 @@
 import Card from "react-bootstrap/Card";
+import React from "react";
 
 import image1 from "../../assets/personalProducts/mugs/mug-red.jpg";
 import image2 from "../../assets/personalProducts/mugs/mug-blue.jpg";
@@ -35,6 +36,14 @@ const Title = [
 ];
 
 export default function BasicExample() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/mugs")
+      .then((res) => res.json())
+      .then((data) => setData(data.Mugs));
+  }, []);
+
   return (
     <div className="card-wrapper">
       <Card style={{ width: "18rem" }}>
@@ -44,8 +53,10 @@ export default function BasicExample() {
               <div class="cardImages">
                 <Card.Img variant="top" src={card.imageSrc} />
                 <Card.Body>
+                  <Card.Title>{Title[index].title}</Card.Title>
+                  <Card.Text> ${data} </Card.Text>
                   <div class="buttons">
-                    <button>{Title[index].title}</button>
+                    <button>Add to Cart</button>
                   </div>
                 </Card.Body>
               </div>

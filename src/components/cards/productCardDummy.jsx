@@ -1,7 +1,6 @@
 import Card from "react-bootstrap/Card";
+import React from "react";
 
-import image1 from "../../assets/babyProducts/dummyChain/big.jpg";
-import image2 from "../../assets/babyProducts/dummyChain/small.jpg";
 import image3 from "../../assets/babyProducts/dummyChain/Tulip.jpg";
 import image4 from "../../assets/babyProducts/dummyChain/Ocean.jpg";
 import image5 from "../../assets/babyProducts/dummyChain/Mint.jpg";
@@ -13,8 +12,6 @@ import image10 from "../../assets/babyProducts/dummyChain/Sunflower.jpg";
 import image11 from "../../assets/babyProducts/dummyChain/Sunset.jpg";
 
 const Images = [
-  { imageSrc: image1 },
-  { imageSrc: image2 },
   { imageSrc: image3 },
   { imageSrc: image4 },
   { imageSrc: image5 },
@@ -27,8 +24,6 @@ const Images = [
 ];
 
 const Title = [
-  { title: "Dummy Chain - Large 18cm" },
-  { title: "Dummy Chain - Small 14cm" },
   { title: "Dummy Chain - Tulip" },
   { title: "Dummy Chain - Ocean" },
   { title: "Dummy Chain - Mint" },
@@ -41,6 +36,21 @@ const Title = [
 ];
 
 export default function BasicExample() {
+  const [data, setData] = React.useState(null);
+  const [data2, setData2] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/chain14cm")
+      .then((res) => res.json())
+      .then((data) => setData(data.Chain14cm));
+  }, []);
+
+  React.useEffect(() => {
+    fetch("/chain18cm")
+      .then((res) => res.json())
+      .then((data) => setData2(data.Chain18cm));
+  }, []);
+
   return (
     <div className="card-wrapper">
       <Card style={{ width: "18rem" }}>
@@ -50,6 +60,9 @@ export default function BasicExample() {
               <div class="cardImages">
                 <Card.Img variant="top" src={card.imageSrc} />
                 <Card.Body>
+                  <Card.Title>{Title[index].title}</Card.Title>
+                  <Card.Text> Small Chain 14CM ${data} </Card.Text>
+                  <Card.Text> Large Chain 18CM ${data2} </Card.Text>
                   <div class="buttons">
                     <button>{Title[index].title}</button>
                   </div>
