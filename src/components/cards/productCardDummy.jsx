@@ -23,34 +23,19 @@ const Images = [
   { imageSrc: image11 },
 ];
 
-const Title = [
-  { title: "Dummy Chain - Tulip" },
-  { title: "Dummy Chain - Ocean" },
-  { title: "Dummy Chain - Mint" },
-  { title: "Dummy Chain - Lilac" },
-  { title: "Dummy Chain - Lavender" },
-  { title: "Dummy Chain - Berries" },
-  { title: "Dummy Chain - Sea Breeze" },
-  { title: "Dummy Chain - Sunflower" },
-  { title: "Dummy Chain - Sunset" },
+const Product = [
+  { title: "Dummy Chain - Tulip", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Ocean", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Mint", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Lilac", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Lavender", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Berries", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Sea Breeze", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Sunflower", price1: 14, price2: 18 },
+  { title: "Dummy Chain - Sunset", price1: 14, price2: 18 },
 ];
 
 export default function BasicExample() {
-  const [data, setData] = React.useState(null);
-  const [data2, setData2] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/chain14cm")
-      .then((res) => res.json())
-      .then((data) => setData(data.Chain14cm));
-  }, []);
-
-  React.useEffect(() => {
-    fetch("/chain18cm")
-      .then((res) => res.json())
-      .then((data) => setData2(data.Chain18cm));
-  }, []);
-
   return (
     <div className="card-wrapper">
       <Card style={{ width: "18rem" }}>
@@ -60,11 +45,21 @@ export default function BasicExample() {
               <div class="cardImages">
                 <Card.Img variant="top" src={card.imageSrc} />
                 <Card.Body>
-                  <Card.Title>{Title[index].title}</Card.Title>
-                  <Card.Text> Small Chain 14CM ${data} </Card.Text>
-                  <Card.Text> Large Chain 18CM ${data2} </Card.Text>
+                  <Card.Title class="cardTitle">
+                    {Product[index].title}
+                  </Card.Title>
+                  <Card.Text class="cardText"> Prices:</Card.Text>
+                  <Card.Text class="cardText">
+                    {" "}
+                    - 14CM ${Product[index].price1}{" "}
+                  </Card.Text>
+                  <Card.Text class="cardText">
+                    {" "}
+                    - 18CM ${Product[index].price2}{" "}
+                  </Card.Text>
                   <div class="buttons">
-                    <button>{Title[index].title}</button>
+                    <button>14CM Add To Cart</button>
+                    <button>18CM Add To Cart</button>
                   </div>
                 </Card.Body>
               </div>

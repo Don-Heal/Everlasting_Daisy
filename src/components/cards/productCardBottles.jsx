@@ -6,17 +6,12 @@ import image2 from "../../assets/personalProducts/bottles/BYO.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 
-const Title = [{ title: "Bottles" }, { title: "BYO Drink Bottle" }];
+const Product = [
+  { title: "Bottles", price: 15 },
+  { title: "BYO Drink Bottle", price: 15 },
+];
 
 export default function BasicExample() {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/bottles")
-      .then((res) => res.json())
-      .then((data) => setData(data.Bottles));
-  }, []);
-
   return (
     <div className="card-wrapper">
       <Card style={{ width: "18rem" }}>
@@ -26,8 +21,13 @@ export default function BasicExample() {
               <div class="cardImages">
                 <Card.Img variant="top" src={card.imageSrc} />
                 <Card.Body>
-                  <Card.Title>{Title[index].title}</Card.Title>
-                  <Card.Text> ${data}</Card.Text>
+                  <Card.Title class="cardTitle">
+                    {Product[index].title}
+                  </Card.Title>
+                  <Card.Text class="cardText">
+                    {" "}
+                    Price: ${Product[index].price}
+                  </Card.Text>
                   <div class="buttons">
                     <button>Add To Cart</button>
                   </div>

@@ -6,17 +6,12 @@ import image2 from "../../assets/personalProducts/gift/baby-gift-box.jpg";
 
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 
-const Title = [{ title: "Mug & Glass Gift Box" }, { title: "Baby Gift Box" }];
+const Product = [
+  { title: "Combo Gift Box", price: 27 },
+  { title: "Baby Gift Box", price: 27 },
+];
 
 export default function BasicExample() {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/boxes")
-      .then((res) => res.json())
-      .then((data) => setData(data.Boxes));
-  }, []);
-
   return (
     <div className="card-wrapper">
       <Card style={{ width: "18rem" }}>
@@ -26,10 +21,15 @@ export default function BasicExample() {
               <div class="cardImages">
                 <Card.Img variant="top" src={card.imageSrc} />
                 <Card.Body>
-                  <Card.Title>{Title[index].title}</Card.Title>
-                  <Card.Text> ${data} </Card.Text>
+                  <Card.Title class="cardTitle">
+                    {Product[index].title}
+                  </Card.Title>
+                  <Card.Text class="cardText">
+                    {" "}
+                    Price: ${Product[index].price}{" "}
+                  </Card.Text>
                   <div class="buttons">
-                    <button>{Title[index].title}</button>
+                    <button>Add To Cart</button>
                   </div>
                 </Card.Body>
               </div>
