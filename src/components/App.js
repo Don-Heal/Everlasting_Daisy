@@ -16,6 +16,9 @@ import Bibs from "./baby_products/babyBibs";
 import Teether from "./baby_products/babyTeether";
 import Dummy from "./baby_products/dummyChains";
 import Apparel from "./baby_products/apparel";
+import Cancel from "./pages/cancel";
+import Success from "./pages/success";
+import Checkout from "./pages/checkout";
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
           <Route path="baby_products/teether" element={<Teether />} />
           <Route path="baby_products/dummyChains" element={<Dummy />} />
           <Route path="baby_products/apparel" element={<Apparel />} />
+          <Route path="cancel" element={<Cancel />} />
+          <Route path="success" element={<Success />} />
+          <Route path="checkout" element={<Checkout />} />
         </Routes>
       </Router>
     </div>

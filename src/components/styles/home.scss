@@ -35,6 +35,22 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.cart {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  position: absolute;
+  @include devices(lrg) {
+    margin-top: -300px;
+  }
+  @include devices(tablet) {
+    margin-top: -250px;
+  }
+}
 .info-containers {
   display: flex;
   flex-direction: column;

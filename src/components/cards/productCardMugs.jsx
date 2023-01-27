@@ -53,7 +53,12 @@ export default function BasicExample() {
                     Price: {Product[index].price}{" "}
                   </Card.Text>
                   <div class="buttons">
-                    <button>Add to Cart</button>
+                    <a
+                      href="https://buy.stripe.com/test_cN2aHu0HL6ch0Za146"
+                      target="blank"
+                    >
+                      <button class="button">Buy Now</button>
+                    </a>
                   </div>
                 </Card.Body>
               </div>

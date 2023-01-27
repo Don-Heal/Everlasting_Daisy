@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.jpg";
 import { Link } from "react-router-dom";
+import cart from "../assets/images/cart-24.png";
 
 const Navigation = () => {
   return (
@@ -98,6 +99,12 @@ const Navigation = () => {
               </Link>
             </li>
           </ul>
+        </div>
+        <div class="cart">
+          <button className="buttons">
+            <img src={cart} alt="Everlasting Logo" />
+            <p>Your Cart (0)</p>
+          </button>
         </div>
       </nav>
     </>

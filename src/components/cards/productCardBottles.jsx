@@ -7,7 +7,7 @@ import image2 from "../../assets/personalProducts/bottles/BYO.jpg";
 const Images = [{ imageSrc: image1 }, { imageSrc: image2 }];
 
 const Product = [
-  { title: "Bottles", price: 15 },
+  { title: "Bottles", price: 20 },
   { title: "BYO Drink Bottle", price: 15 },
 ];
 
