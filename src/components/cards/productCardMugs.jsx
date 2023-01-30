@@ -57,7 +57,7 @@ export default function BasicExample() {
                       href="https://buy.stripe.com/test_cN2aHu0HL6ch0Za146"
                       target="blank"
                     >
-                      <button class="button">Buy Now</button>
+                      <button class="button">Add To Cart</button>
                     </a>
                   </div>
                 </Card.Body>

@@ -28,11 +28,11 @@ const link = [
 
 export default function BasicExample() {
   return (
-    <div className="card-wrapper">
+    <div class="card-wrapper">
       <Card style={{ width: "18rem" }}>
         {Images.map((card, index) => (
           <div key={index}>
-            <div className="card">
+            <div class="card">
               <div class="cardImages">
                 <Link to={link[index].link}>
                   <Card.Img variant="top" src={card.imageSrc} />
@@ -41,7 +41,8 @@ export default function BasicExample() {
                   <div class="buttons">
                     <Link to={link[index].link}>
                       <button type="button">
-                        {Title[index].title} Shop Now
+                        {Title[index].title}
+                        <br></br> Shop Now
                       </button>
                     </Link>
                   </div>

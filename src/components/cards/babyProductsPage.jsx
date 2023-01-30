@@ -41,7 +41,8 @@ export default function BasicExample() {
                   <div class="buttons">
                     <Link to={link[index].link}>
                       <button type="button">
-                        {Title[index].title} Shop Now
+                        {Title[index].title}
+                        <br></br> Shop Now
                       </button>
                     </Link>
                   </div>

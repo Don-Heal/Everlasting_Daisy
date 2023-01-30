@@ -23,7 +23,6 @@
 
 .nav-bar {
   display: flex;
-  margin: auto;
   justify-content: center;
   align-items: center;
   @include devices(tablet) {

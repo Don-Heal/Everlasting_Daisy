@@ -58,8 +58,12 @@ export default function BasicExample() {
                     - 18CM ${Product[index].price2}{" "}
                   </Card.Text>
                   <div class="buttons">
-                    <button>14CM Add To Cart</button>
-                    <button>18CM Add To Cart</button>
+                    <button>
+                      14CM <br></br> Add To Cart
+                    </button>
+                    <button>
+                      18CM <br></br> Add To Cart
+                    </button>
                   </div>
                 </Card.Body>
               </div>

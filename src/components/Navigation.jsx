@@ -2,10 +2,30 @@ import React from "react";
 import logo from "../assets/images/logo.jpg";
 import { Link } from "react-router-dom";
 import cart from "../assets/images/cart-24.png";
+import { Modal, Button } from "react-bootstrap";
+// import { useState } from "react";
 
 const Navigation = () => {
+  const [show, setShow] = React.useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
       <div className="home">
         <div className="home-title">
           <img src={logo} alt="Everlasting Logo" />
@@ -101,7 +121,7 @@ const Navigation = () => {
           </ul>
         </div>
         <div class="cart">
-          <button className="buttons">
+          <button className="buttons" onClick={handleShow}>
             <img src={cart} alt="Everlasting Logo" />
             <p>Your Cart (0)</p>
           </button>
